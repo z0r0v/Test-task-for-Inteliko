@@ -35,22 +35,17 @@ input {
       text-transform: uppercase;
       cursor: pointer;
     }
-
     $transition-effect: cubic-bezier(0.645, 0.045, 0.355, 1);
     $transition-time: 0.1s;
     $transition-delay: 500ms;
-
-
     input:checked + label.app__form--button-green {
       background-color: $color-background-green;
       transition: background-color $transition-delay $transition-effect $transition-time;
     }
-
     input:checked + label.app__form--button-pink {
       background-color: $color-background-pink;
       transition: background-color $transition-delay $transition-effect $transition-time;
     }
-
   }
 }
 
